@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <title>Cordova Plugins</title>
+    </head>
+    <body>
+        <div data-role="page" id="wrapper">
+            <header data-role="header" data-theme="b">
+                <a href="index.html" data-role="button" data-icon="home">Home</a>
+                <h2>Cordova Plugins</h2>
+            </header>
+
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="accelerometer.html">Accelerometer</a></li>
+                    <li><a href="camera.html">Camera</a></li>
+                    <li><a href="#" onclick="capture.captureAudio()">Capture</a></li>
+                    <li><a href="compass.html" onclick="compass.getCurrentHeading()">Compass</a></li>
+                    <li><a href="#" onclick="connection.checkConnection()">Connection</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="device.html">Device</a></li>
+                    <li><a href="file.html">File</a></li>
+                    <li><a href="geolocation.html" onclick="geolocation.getCurrentPosition()">Geolocation</a></li>
+                    <li><a href="globalization.html">Globalization</a></li>
+                    <li><a href="inappbrowser.html">InAppBrowser</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="notification.html">Notification</a></li>
+                    <li><a href="storage.html">Storage</a></li>
+                </ul>
+            </div>
+
+            <footer data-role="footer" data-theme="b" data-position="fixed">
+                <h2>&copy; Photon</h2>
+            </footer>
+
+            <script>
+                app.initialize();
+            </script>
+        </div>
+    </body>
+</html>

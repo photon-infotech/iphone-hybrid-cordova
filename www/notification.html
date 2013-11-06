@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Notification</title>
+    </head>
+    <body>
+        <div data-role="page" id="wrapper">
+            <header data-role="header" data-theme="b">
+                <a href="index.html" data-role="button" data-icon="home">Home</a>
+                <h2>Notification</h2>
+            </header>
+
+            <div data-role="content">
+                <div data-role="controlgroup">
+                    <a href="#" data-role="button" onclick="notification.showAlert()">Alert</a>
+                    <a href="#" data-role="button" onclick="notification.showConfirm()">Confirm</a>
+                    <a href="#" data-role="button" onclick="notification.showPrompt()">Prompt</a>
+                    <a href="#" data-role="button" onclick="notification.playBeep()">Beep</a>
+                    <a href="#" data-role="button" onclick="notification.vibrate()">Vibrate</a>
+                </div>
+            </div>
+
+            <footer data-role="footer" data-theme="b" data-position="fixed">
+                <h2>&copy; Photon</h2>
+            </footer>
+        </div>
+    </body>
+</html>

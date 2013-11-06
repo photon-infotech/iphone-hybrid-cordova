@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Storage</title>
+    </head>
+    <body>
+        <div data-role="page" id="wrapper">
+            <header data-role="header" data-theme="b">
+                <a href="index.html" data-role="button" data-icon="home">Home</a>
+                <h2>Storage</h2>
+            </header>
+
+            <div data-role="content">
+                <div data-role="controlgroup">
+                    <a href="dbInsert.html" data-role="button">Insert into DB</a>
+                    <a href="#" data-role="button" onclick="storage.viewDB()">View DB</a>
+                    <a href="#" data-role="button" onclick="storage.dropTable()">Drop Table</a>
+                </div>
+                <div id="viewTableContents">
+                    <p>
+                        <h4>Table Contents</h4>
+                    </p>
+                    <table data-role="table" data-mode="columntoggle" class="ui-responsive table-stroke">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dbViewTableBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <footer data-role="footer" data-theme="b" data-position="fixed">
+                <h2>&copy; Photon</h2>
+            </footer>
+        </div>
+    </body>
+</html>

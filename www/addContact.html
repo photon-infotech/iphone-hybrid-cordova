@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Add a Contact</title>
+    </head>
+    <body>
+        <div data-role="page" id="wrapper">
+            <header data-role="header" data-theme="b">
+                <a href="index.html" data-role="button" data-icon="home">Home</a>
+                <h2>Add a Contact</h2>
+            </header>
+
+            <div data-role="content">
+                <form>
+                    <div data-role="fieldcontain">
+                        <label for="firstName">First Name :</label>
+                        <input type="text" data-clear-btn="true" name="firstName" id="firstName" value="">
+                    </div>  
+                    <div data-role="fieldcontain">
+                        <label for="lastName">Last Name :</label>
+                        <input type="text" data-clear-btn="true" name="lastName" id="lastName" value="">
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="mobileNo">Mobile No :</label>
+                        <input type="tel" data-clear-btn="true" name="mobileNo" id="mobileNo" value="">
+                    </div>
+                    <a href="#" data-role="button" onclick="contacts.addContact()">Submit</a>
+                </form>
+            </div>
+
+            <footer data-role="footer" data-theme="b" data-position="fixed">
+                <h2>&copy; Photon</h2>
+            </footer>
+        </div>
+    </body>
+</html>

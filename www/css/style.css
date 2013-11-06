@@ -1,0 +1,17 @@
+#cameraResult, #accelerometerControlGroup, #fileSystemContainer, #globalizationContainer, #audioPosition, #audioDuration, #viewTableContents, #contactsResult {
+	display: none;
+}
+
+#readFileContents, #cameraResult, #contactsResult, #viewTableContents {
+	text-align: center;
+}
+
+#cameraImage {
+	margin:0 auto;
+	height: 200px;
+	width: 200px;
+}
+
+.ui-table-columntoggle-btn {
+    display: none !important;
+}
